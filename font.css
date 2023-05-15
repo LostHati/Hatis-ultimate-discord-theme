@@ -2,8 +2,8 @@
 @import url("https://celestialreaver.github.io/BetterDiscord/themes/base/fonts/firacode/FiraCode-Regular.woff2");
 
 :root {
-  --font-primary: var(--customFont), "Whitney";
-  --font-display: var(--customFont), "Whitney";
+  --font-primary: var(--customFont), "Inter";
+  --font-display: var(--customFont), "Inter";
 }
 
 ::placeholder,
