@@ -1,25 +1,26 @@
 /**
 * @name Hatis-ultimate-discord-theme
-* @version 1.0.1
+* @version 1.0.3
 * @description A clean retro theme that provides the perfect glow and vibe to your Discord.
 * @author Hati
 * @authorId 305008253765550090
 * @source https://github.com/LostHati/Hatis-ultimate-discord-theme
 * @website https://LostHati.github.io/
-* @updateUrl 
+* @updateUrl https://raw.githubusercontent.com/LostHati/Hatis-ultimate-discord-theme/main/Hatis-ultimate-discord-theme.theme.css
 */
-@import url(https://celestialreaver.github.io/BetterDiscord/themes/base/icon-settings.css);
+@import url(https://raw.githubusercontent.com/LostHati/Hatis-ultimate-discord-theme/main/icon-settings.css);
 @import url("https://discordstyles.github.io/SoftX/RadialGlow.css"); /* RadialGlow effect for avatars. | Remove this line to disable. */
-@import url(https://celestialreaver.github.io/BetterDiscord/themes/base/hljs.css);
-@import url(https://celestialreaver.github.io/BetterDiscord/themes/base/font.css);
+@import url(https://raw.githubusercontent.com/LostHati/Hatis-ultimate-discord-theme/main/hljs.css);
+@import url(https://raw.githubusercontent.com/LostHati/Hatis-ultimate-discord-theme/main/font.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 @import url(https://celestialreaver.github.io/BetterDiscord/themes/base/addons.css);
-@import url(https://celestialreaver.github.io/BetterDiscord/themes/base/discard/specialColors.css);
+@import url(https://raw.githubusercontent.com/LostHati/Hatis-ultimate-discord-theme/main/specialColors.css);
 
 :root {
   --mainColor: #03edf9;
   --backgroundColor01: #2a2139;
   --backgroundColor02: #241b2f;
+  --backgroundColor03: #2a2139;
   --backgroundCode: #262335;
   --backgroundName: rgba(0, 0, 0, 0.2);
   --gradientColor01: #36f9f6;
@@ -45,14 +46,14 @@
   --rs-version: "1.0.2";
   --logo-gif: url('https://tenor.com/view/legend-o-zelda-link-gif-11134922');
   --chat-bubble: 0;
-  --glow-intensity: 1; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
+  --glow-intensity: 0.7; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
 }
 
 #app-mount .body {
   line-height: 1;
   margin: 0;
   padding: 0;
-  font-family: var(--customFont) !important;
+  font-family: var(--customfont) !important;
   font-size: 14px !important;
   overflow: hidden;
 }
@@ -67,7 +68,7 @@ body {
   line-height: 1;
   margin: 0;
   padding: 0;
-  font-family: var(--customFont) !important;
+  font-family: var(--customfont) !important;
   overflow: hidden;
   background: transparent;
   border-radius: 3px;
@@ -326,7 +327,7 @@ body {
 */
 
 .text-sm-medium-3Pz3rB, .text-sm-normal-3Zj3Iv {
-  font-family: var(--font-primary);
+  font-family: var(--customfont-primary);
   font-size: 14px;
   line-height: 18px;
   padding-left: 4px !important;
@@ -734,7 +735,7 @@ body {
   padding: 10px 0;
   align-items: center;
   justify-content: center;
-  font-family: var(--customFont) !important;
+  font-family: var(--customfont) !important;
   border-bottom: none !important;
   background: var(--backgroundColor02) !important;
 }
@@ -996,7 +997,7 @@ body {
   padding: 10px 0;
   align-items: center;
   justify-content: center;
-  font-family: var(--customFont);
+  font-family: var(--customfont);
   border-bottom: linear-gradient(to right, #03edf920, #fc28a890) !important;
   background: var(--backgroundColor02) !important;
 }
@@ -1211,7 +1212,7 @@ body {
   position: relative;
   font-size: 12px;
   line-height: 16px;
-  font-family: var(--font-display);
+  font-family: var(--customfont-display);
   font-weight: 500;
   color: #fff;
   background-color: var(--gradientColor02) !important;
@@ -1279,7 +1280,7 @@ body {
 
 .defaultColor-2cKwKo {
   color: #fff;
-  font: var(--customFont) !important;
+  font: var(--customfont) !important;
   font-size: 20px !important;
 }
 
@@ -4169,14 +4170,3 @@ svg aria-hidden {
   content: "Synthwave '84 " var(--rs-version);
   display: block;
 }
-
-
-/* This is not a customizable theme. People have reached out about customizing but my intention
-is to keep this theme as true to my original vision as possible. 
-
-For those that want a theme that is more customizable, I am currently working on one that will
-have a similar feel to Synthwave '84 but will allow you to customize it and put your creative 
-touch on it.
-
-Thank you for all of the feedback - it's been helpful in creating a theme that we all can
-enjoy! */
